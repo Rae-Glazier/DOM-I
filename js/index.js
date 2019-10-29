@@ -43,27 +43,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //selectors ~ task 1
 
-const headerElement = document.getElementsByTagName('header');
-const navBar = document.getElementsByTagName('nav');
-const aLinks = document.getElementsByTagName('a');
-const logoImg = document.getElementById('logo-img');
-const ctAction = document.getElementsByClassName('cta');
-const ctaText = document.getElementsByClassName('cta-text');
-const ctaImg = document.getElementById('cta-img');
-const mainContent = document.getElementsByClassName('main-content');
-const topContent = document.getElementsByClassName('top-content');
-const textContent = document.getElementsByClassName('text-content');
-const middleImg = document.getElementById('middle-img');
-const bottomContent = document.getElementsByClassName('bottom-content');
-const contactSect = document.getElementsByClassName('contact')
-const fotterSect = document.getElementsByTagName('footer');
+
 
 //update HTML ~ task 2
 
 // nav bar 
+
+const parentNav = document.querySelector('nav');
+
  const navServices = document.createElement('a');
  navServices.textContent = 'Services'; 
- const parentNav = document.querySelector('nav');
  parentNav.append(navServices);
 
  const navProduct = document.createElement('a');
@@ -86,3 +75,43 @@ const fotterSect = document.getElementsByTagName('footer');
  navContact.textContent = 'Contact'; 
  parentNav.append(navContact);
 
+ //cta 
+
+const heading = document.querySelector('h1');
+heading.textContent= siteContent['cta']['h1'];
+
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+const code = document.querySelector('img-src');
+// code.setAttribute = siteContent['cta']['img-src'];
+
+//main content
+
+//top content
+
+const titles = document.querySelectorAll('h4');
+const para = document.querySelectorAll('p');
+
+titles[0].textContent = siteContent['main-content']['features-h4'];
+titles[1].textContent = siteContent['main-content']['about-h4'];
+
+para[0].textContent = siteContent['main-content']['features-content'];
+para[1].textContent = siteContent['main-content']['about-content'];
+
+
+
+
+//bottom content
+
+titles[2].textContent = siteContent['main-content']['services-h4'];
+titles[3].textContent = siteContent['main-content']['product-h4'];
+titles[4].textContent = siteContent['main-content']['vision-h4'];
+
+para[2].textContent = siteContent['main-content']['services-content'];
+para[3].textContent = siteContent['main-content']['product-content'];
+para[4].textContent = siteContent['main-content']['vision-content'];
+
+//contact
+
+//footer
