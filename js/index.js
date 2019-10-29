@@ -83,8 +83,9 @@ heading.textContent= siteContent['cta']['h1'];
 const button = document.querySelector('button');
 button.textContent = siteContent['cta']['button'];
 
-const code = document.querySelector('img-src');
-// code.setAttribute = siteContent['cta']['img-src'];
+const images = document.querySelectorAll('img');
+
+images[1].setAttribute('src', siteContent['cta']['img-src']);
 
 //main content
 
@@ -100,7 +101,7 @@ para[0].textContent = siteContent['main-content']['features-content'];
 para[1].textContent = siteContent['main-content']['about-content'];
 
 
-
+images[2].setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 //bottom content
 
