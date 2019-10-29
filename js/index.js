@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//selectors 
+//selectors ~ task 1
 
 const headerElement = document.getElementsByTagName('header');
 const navBar = document.getElementsByTagName('nav');
@@ -57,3 +57,32 @@ const middleImg = document.getElementById('middle-img');
 const bottomContent = document.getElementsByClassName('bottom-content');
 const contactSect = document.getElementsByClassName('contact')
 const fotterSect = document.getElementsByTagName('footer');
+
+//update HTML ~ task 2
+
+// nav bar 
+ const navServices = document.createElement('a');
+ navServices.textContent = 'Services'; 
+ const parentNav = document.querySelector('nav');
+ parentNav.append(navServices);
+
+ const navProduct = document.createElement('a');
+ navProduct.textContent = 'Product'; 
+ parentNav.append(navProduct);
+
+ const navVision = document.createElement('a');
+ navVision.textContent = 'Vision'; 
+ parentNav.append(navVision);
+
+ const navFeatures = document.createElement('a');
+ navFeatures.textContent = 'Features'; 
+ parentNav.append(navFeatures);
+
+ const navAbout = document.createElement('a');
+ navAbout.textContent = 'About';
+ parentNav.append(navAbout);
+
+ const navContact = document.createElement('a');
+ navContact.textContent = 'Contact'; 
+ parentNav.append(navContact);
+
