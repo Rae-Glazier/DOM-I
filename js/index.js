@@ -49,31 +49,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nav bar 
 
-const parentNav = document.querySelector('nav');
+const navi = document.querySelectorAll('a');
 
- const navServices = document.createElement('a');
- navServices.textContent = 'Services'; 
- parentNav.append(navServices);
+navi[0].textContent = siteContent['nav']['nav-item-1'];
+navi[1].textContent = siteContent['nav']['nav-item-2'];
+navi[2].textContent = siteContent['nav']['nav-item-3'];
+navi[3].textContent = siteContent['nav']['nav-item-4'];
+navi[4].textContent = siteContent['nav']['nav-item-5'];
+navi[5].textContent = siteContent['nav']['nav-item-6'];
 
- const navProduct = document.createElement('a');
- navProduct.textContent = 'Product'; 
- parentNav.append(navProduct);
 
- const navVision = document.createElement('a');
- navVision.textContent = 'Vision'; 
- parentNav.append(navVision);
-
- const navFeatures = document.createElement('a');
- navFeatures.textContent = 'Features'; 
- parentNav.append(navFeatures);
-
- const navAbout = document.createElement('a');
- navAbout.textContent = 'About';
- parentNav.append(navAbout);
-
- const navContact = document.createElement('a');
- navContact.textContent = 'Contact'; 
- parentNav.append(navContact);
 
  //cta 
 
@@ -115,4 +100,11 @@ para[4].textContent = siteContent['main-content']['vision-content'];
 
 //contact
 
+titles[5].textContent = siteContent['contact']['contact-h4'];
+para[5].textContent = siteContent['contact']['address'];
+para[6].textContent = siteContent['contact']['phone'];
+para[7].textContent = siteContent['contact']['email'];
+
 //footer
+
+para[8].textContent = siteContent['footer']['copyright'];
