@@ -41,12 +41,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//selectors ~ task 1
-
-
-
-//update HTML ~ task 2
-
 // nav bar 
 
 const navi = document.querySelectorAll('a');
@@ -57,6 +51,21 @@ navi[2].textContent = siteContent['nav']['nav-item-3'];
 navi[3].textContent = siteContent['nav']['nav-item-4'];
 navi[4].textContent = siteContent['nav']['nav-item-5'];
 navi[5].textContent = siteContent['nav']['nav-item-6'];
+
+navi.forEach( text => {
+  text.style.color='green';
+})
+
+const navStuff = document.querySelector('nav');
+
+const newNavi = document.createElement('a');
+const newNav = document.createElement('a');
+
+newNavi.textContent = 'BLOG';
+newNav.textContent = 'PICS';
+
+navStuff.append(newNavi);
+navStuff.prepend(newNav)
 
 
 
